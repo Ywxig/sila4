@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sila4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+.main {
+    background-color: #292929;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: rgba(0, 0, 0, 255);
+}
+
+
+.img-wrap-grud {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 27%;
+}
+
+.img-wrap-grud img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-grud:hover img {
+  opacity: 1;
+}
+
+.img-wrap-press {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 39%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 14%;
+}
+
+.img-wrap-press img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-press:hover img {
+  opacity: 1;
+}
+
+.img-wrap-jivotkos {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 31.5%;
+  left: 50.2%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 23%;
+  height: 7%;
+}
+
+.img-wrap-jivotkos img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-jivotkos:hover img {
+  opacity: 1;
+}
+
+.img-wrap-kvadriceps {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 56%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.img-wrap-kvadriceps img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-kvadriceps:hover img {
+  opacity: 1;
+}
+
+.img-wrap-golen {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 81%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 24%;
+}
+
+.img-wrap-golen img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-golen:hover img {
+  opacity: 1;
+}
+
+.img-wrap-delta {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 20%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 39%;
+  height: 9%;
+}
+
+.img-wrap-delta img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-delta:hover img {
+  opacity: 1;
+}
+
+.img-wrap-biceps {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 28%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 45%;
+}
+
+.img-wrap-biceps img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-biceps:hover img {
+  opacity: 1;
+}
+
+.img-wrap-predpl {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 37%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 55%;
+}
+
+.img-wrap-predpl img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-predpl:hover img {
+  opacity: 1;
+}
+
+.img-wrap-trapecspina {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 22%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 27%;
+}
+
+
+.img-wrap-trapecspina img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-trapecspina:hover img {
+  opacity: 1;
+}
+
+.img-wrap-spina {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 33%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 27%;
+}
+
+
+.img-wrap-spina img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-spina:hover img {
+  opacity: 1;
+}
+
+.img-wrap-yagodic {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 48.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 20.3%;
+}
+
+
+.img-wrap-yagodic img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-yagodic:hover img {
+  opacity: 1;
+}
+
+.img-wrap-bicepsbedra {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 63%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 23.5%;
+}
+
+
+.img-wrap-bicepsbedra img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-bicepsbedra:hover img {
+  opacity: 1;
+}
+
+.img-wrap-bicepsbedra {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 63%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 23.5%;
+}
+
+
+.img-wrap-bicepsbedra img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-bicepsbedra:hover img {
+  opacity: 1;
+}
+
+.img-wrap-golenspina {
+  display: inline-flex;
+  padding: 5px;
+  position: absolute;
+  top: 82%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  width: 24.5%;
+  height: 25;
+}
+
+
+.img-wrap-golenspina img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-golenspina:hover img {
+  opacity: 1;
+}
+
+.img-wrap-deltaspina {
+  display: inline-flex;
+  position: absolute;
+  top: 20.2%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 37.5%;
+  height: 36;
+}
+
+
+.img-wrap-deltaspina img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-deltaspina:hover img {
+  opacity: 1;
+}
+
+.img-wrap-triceps {
+  display: inline-flex;
+  position: absolute;
+  top: 28.6%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 45.5%;
+}
+
+
+.img-wrap-triceps img {
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.img-wrap-triceps:hover img {
+  opacity: 1;
+}
+
+
+    </style>
+    </head>
+    <body class="main">
+    <table align="center" border="0">
+    <tr>
+        <td>
+            <div style="border-right: 0px;" class='container'>
+                <img src="img/m1.png" alt="Snow" style="width:100%">
+            
+                <div class="img-wrap-biceps">
+                
+                    <a target="_blank" href="biceps.html"><img  src="img/biceps.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-predpl">
+                
+                    <a target="_blank" href="predpl.html"><img  src="img/predpl.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-delta">
+                
+                  <a target="_blank" href="delta.html"><img  src="img/delta.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-grud">
+                
+                  <a target="_blank" href="grud.html"><img  src="img/grud.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-jivotkos">
+                
+                  <a target="_blank" href="jivotkos.html"><img  src="img/jivotkos.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-press">
+                
+                  <a target="_blank" href="press.html"><img  src="img/press.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-kvadriceps">
+                
+                  <a target="_blank" href="kvadriceps.html"><img  src="img/kvadriceps.png" alt=""></a>
+                </div>
+            
+                <div class="img-wrap-golen">
+                
+                  <a target="_blank" href="golen.html"><img  src="img/golen.png" alt=""></a>
+                </div>
+            
+            </div>
+        </td>
+        <td>
+            <div style="justify-content: right;" class='container'>
+                <img src="img/m2.png" alt="Snow" style="width:100%">
+
+                <div class="img-wrap-deltaspina">
+
+                  <a target="_blank" href="deltaspina.html"><img  src="img/deltaspina.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-yagodic">
+
+                  <a target="_blank" href="yagodic.html"><img  src="img/yagodic.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-bicepsbedra">
+
+                  <a target="_blank" href="bicepsbedra.html"><img  src="img/bicepsbedra.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-golenspina">
+
+                  <a target="_blank" href="golenspina.html"><img  src="img/golenspina.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-deltaspina">
+
+                  <a target="_blank" href="deltaspina.html"><img  src="img/deltaspina.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-trapecspina">
+
+                  <a target="_blank" href="trapecspina.html"><img  src="img/trapecspina.png" alt=""></a>
+                </div>
+
+                <div class="img-wrap-triceps">
+
+                    <img  src="img/triceps.png" alt="">
+                </div>
+
+                <div class="img-wrap-spina">
+
+                    <img  src="img/spina.png" alt="">
+                </div>
+
+
+
+            </div>
+        </td>
+    </tr>
+    </table>
+
+    <div>
+        <h1>GitHub</h1>
+        <h2><a href="https://github.com/Ywxig/sila4" style="color: #fafafa;">Проект: Силачь</a></h2>
+    </div>
+
+    </body>
+    </html>

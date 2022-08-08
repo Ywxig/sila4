@@ -1,0 +1,2 @@
+d = [{'id': 'F73KYY7rexw', 'thumbnails': ['https://i.ytimg.com/vi/F73KYY7rexw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBUGpKyUiUlW2arPaXtt0sdBA3Q6A', 'https://i.ytimg.com/vi/F73KYY7rexw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDjKBCOzxMYMGedMdfKTmbW4Hg1RQ'], 'title': '��� ������� ��� ������ � ����������? 100% ������� �����!', 'long_desc': None, 'channel': '����� �� - ������ � ���� IT!', 'duration': '12:36', 'views': '376,710 views', 'publish_time': '1 year ago', 'url_suffix': '/watch?v=F73KYY7rexw'}]
+print(d[0])
